@@ -8,7 +8,7 @@
 
 #include "Bomb.hpp"
 
-Bomb::Bomb(SDL_Renderer* r, const std::string path, const std::string name, const int x, const int y)
+Bomb::Bomb(SDL_Renderer* r, const std::string& path, const std::string& name, const int x, const int y)
 {
     sprite = new Sprite(r, path, name);
     this->x = x;

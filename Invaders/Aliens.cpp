@@ -9,7 +9,7 @@
 #include "Aliens.hpp"
 #include <iostream>
 
-Aliens::Aliens(SDL_Renderer* renderer, const std::string path, const std::string name)
+Aliens::Aliens(SDL_Renderer* renderer, const std::string& path, const std::string& name)
     : sprite(new Sprite(renderer, path, name))
 {
     numOfRow = Config::ROWS;

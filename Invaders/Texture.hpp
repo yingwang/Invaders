@@ -21,9 +21,9 @@ protected:
     
 public:
     Texture();
-    Texture(SDL_Renderer* r, const std::string path, const std::string name);
+    Texture(SDL_Renderer* r, const std::string& path, const std::string& name);
     ~Texture();
-    bool LoadFromFile(const std::string path, const std::string name);
+    bool LoadFromFile(const std::string& path, const std::string& name);
     void Free();
     void Draw() const;
     void SetRenderer(SDL_Renderer* renderer);

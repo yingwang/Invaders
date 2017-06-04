@@ -20,7 +20,7 @@ private:
     int y;
 
 public:
-    Player(SDL_Renderer* r, const std::string path, const std::string name);
+    Player(SDL_Renderer* r, const std::string& path, const std::string& name);
     void Draw() const;
     void MoveLeft();
     void MoveRight();

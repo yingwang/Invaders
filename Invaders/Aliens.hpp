@@ -25,7 +25,7 @@ private:
     bool moveRight;
     bool changeDirection;
 public:
-    Aliens(SDL_Renderer* renderer, const std::string path, const std::string name);
+    Aliens(SDL_Renderer* renderer, const std::string& path, const std::string& name);
     void Draw() const;
     void Update();
     void Init();

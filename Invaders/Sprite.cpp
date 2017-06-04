@@ -9,7 +9,7 @@
 #include "Sprite.hpp"
 #include "Texture.hpp"
 
-Sprite::Sprite(SDL_Renderer* r, const std::string path, const std::string name)
+Sprite::Sprite(SDL_Renderer* r, const std::string& path, const std::string& name)
 {
     renderer = r;
     SDL_Surface* loadedSurface = IMG_Load( (path + "/" + name).c_str() );

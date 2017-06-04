@@ -20,7 +20,7 @@ private:
     int y;
     bool rowUpdated;
 public:
-    Rocket(SDL_Renderer* r, const std::string path, const std::string name, const int x);
+    Rocket(SDL_Renderer* r, const std::string& path, const std::string& name, const int x);
     void Draw() const;
     void Update();
     bool OutOfScreen();

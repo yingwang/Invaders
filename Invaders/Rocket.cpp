@@ -8,7 +8,7 @@
 
 #include "Rocket.hpp"
 
-Rocket::Rocket(SDL_Renderer* r, const std::string path, const std::string name, const int x)
+Rocket::Rocket(SDL_Renderer* r, const std::string& path, const std::string& name, const int x)
     :sprite(new Sprite(r, path, name))
 {
     this->x = x;

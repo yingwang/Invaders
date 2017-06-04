@@ -16,7 +16,7 @@
 class Sprite : public Texture
 {    
 public:
-    Sprite(SDL_Renderer* r, const std::string path, const std::string name);
+    Sprite(SDL_Renderer* r, const std::string& path, const std::string& name);
     void Draw(const int x, const int y);
 };
 

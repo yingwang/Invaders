@@ -22,10 +22,10 @@ private:
     int xOffset;
     int yOffset;
 public:
-    TextTexture(SDL_Renderer* r, const std::string path, const std::string name, const std::string textToRender);
+    TextTexture(SDL_Renderer* r, const std::string& path, const std::string& name, const std::string& textToRender);
     ~TextTexture();
     void Draw(int x, int y);
-    void Update(const std::string textToRender);
+    void Update(const std::string& textToRender);
 };
 
 #endif /* TextTexture_hpp */

@@ -8,7 +8,7 @@
 
 #include "TextTexture.hpp"
 
-TextTexture::TextTexture(SDL_Renderer* r, std::string path, std::string name, std::string textToRender)
+TextTexture::TextTexture(SDL_Renderer* r, const std::string& path, const std::string& name, const std::string& textToRender)
 {
     renderer = r;
     font = TTF_OpenFont((path + "/" + name).c_str(), 20);
@@ -33,7 +33,7 @@ void TextTexture::Draw(int x, int y)
     SDL_RenderCopy(renderer, texture, nullptr, &renderQuad);
 }
 
-void TextTexture::Update(const std::string textToRender)
+void TextTexture::Update(const std::string& textToRender)
 {
     SDL_Surface* textSurface = TTF_RenderText_Blended(font, textToRender.c_str(), textColor);
     texture = SDL_CreateTextureFromSurface(Renderer(), textSurface);

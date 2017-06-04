@@ -20,7 +20,7 @@ private:
     int y;
     bool rowUpdated;
 public:
-    Bomb(SDL_Renderer* r, const std::string path, const std::string name, const int x, const int y);
+    Bomb(SDL_Renderer* r, const std::string& path, const std::string& name, const int x, const int y);
     void Draw() const;
     void Update();
     void ResetRowUpdated() { rowUpdated = false; }

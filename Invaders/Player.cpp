@@ -8,7 +8,7 @@
 
 #include "Player.hpp"
 
-Player::Player(SDL_Renderer* r, const std::string path, const std::string name)
+Player::Player(SDL_Renderer* r, const std::string& path, const std::string& name)
     : sprite(new Sprite(r, path, name))
 {
     x = Config::Player_X;
